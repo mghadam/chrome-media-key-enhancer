@@ -36,8 +36,8 @@ Enable the rewind and forward media keys for **YouTube** (and optionally other w
 
 By default, this extension listens on **YouTube** pages:
 
-- If you press the “previous track” key, it rewinds the video by **10 seconds**.
-- If you press the “next track” key, it forwards the video by **10 seconds**.
+- If you press the “previous track” key, it rewinds the video by **5 seconds**.
+- If you press the “next track” key, it forwards the video by **5 seconds**.
 
 Feel free to tweak this logic in **`background.js`** to do something else (e.g., skip to the next YouTube video in a playlist).
 
@@ -63,4 +63,4 @@ Feel free to tweak this logic in **`background.js`** to do something else (e.g.,
    ```
 
 2. **Update `background.js`**  
-   If you want site-specific behavior, detect the site with `window.location.hostname` (or a similar check), then adjust how you handle the media keys. For instance, you might query a different video element or skip forward 5 seconds instead of 10.
+   If you want site-specific behavior, detect the site with `window.location.hostname` (or a similar check), then adjust how you handle the media keys. For instance, you might query a different video element or skip forward 10 seconds instead of 5.
