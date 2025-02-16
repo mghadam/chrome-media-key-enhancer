@@ -1,0 +1,14 @@
+{
+    "name": "Media Key Enabler",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Enable next/previous media key functionality on YouTube",
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["background.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
